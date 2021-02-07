@@ -204,13 +204,13 @@ dialogekTest:
             system("cls");
             ResizeBicubic(im, imresized, 3.14159265);
 //            lanczos::Resize(im, imLanczos, 3.14159265, lanczos::eresize::initial);
-//            lanczos::Resize(im, imLanczos, 5/*3.14159265*/, lanczos::eresize::type2);
+//            lanczos::Resize(im, imLanczos, 3.14159265, lanczos::eresize::type2);
 //            lanczos::Resize(im, imLanczos, 3.14159265, lanczos::eresize::type3);
 
-            lanczos::Resize(im, imLanczos, 3.14159265, lanczos::eresize::type4);
+//            lanczos::Resize(im, imLanczos, 3.14159265, lanczos::eresize::type4);
 //            lanczos::Resize(im, imLanczos, 3.14159265, lanczos::eresize::type5);
 //            lanczos::Resize(im, imLanczos, 3.14159265, lanczos::eresize::mythreads);
-//            lanczos::Resize(im, imLanczos, 3.14159265, lanczos::eresize::secondcacheline);
+            lanczos::Resize(im, imLanczos, 3.14159265, lanczos::eresize::secondcacheline);
 
             dialozhekHigh.SetImageData(im);
             dialozhekBicubic.SetImageData(imresized);
